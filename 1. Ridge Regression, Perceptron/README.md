@@ -26,7 +26,7 @@ where λ is the <ins>regularization parameter</ins>. We still don’t know what 
 
     The code must be robust to the case that the matrix C is not invertible.
 
-4. Usethenormalizeddatatotrainaridgeregressionmodelforeachofthefollowingvaluesofthe regularization penalty parameter λ: {e−5, e−4, e−3, ..., e10}. In a single figure, plot the ridge regression coefficient of each feature (8 in total) as a function of ln λ (8 curves in total) for ln λ ranging from -5 to 10 in steps of 1. Use suitable colors and/or markers to distinguish between the 8 curves and label them appropriately in a legend. Discuss what happens to the coefficients as λ becomes larger. (No code to submit here, just plots and your comments)
+4. Use the normalized data to train a ridge regression model for each of the following values of the regularization penalty parameter λ: {e−5, e−4, e−3, ..., e10}. In a single figure, plot the ridge regression coefficient of each feature (8 in total) as a function of ln λ (8 curves in total) for ln λ ranging from -5 to 10 in steps of 1. Use suitable colors and/or markers to distinguish between the 8 curves and label them appropriately in a legend. Discuss what happens to the coefficients as λ becomes larger. (No code to submit here, just plots and your comments)
 
 5. In another figure, plot the mean-squared-error (MSE) of both the training and the test data as a function of ln λ. Discuss your observations. (No code to submit here, just plots and your comments)
 
