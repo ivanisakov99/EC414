@@ -6,12 +6,10 @@ named lcavol, lweight, age, lbph, svi, lcp, gleason, and pgg45 are used to estim
 *(ytest, ytrain)*.
 
 Using the notation defined above, the LS problem is:
-
-//
+![Screenshot 2021-04-26 at 16 29 57](https://user-images.githubusercontent.com/60196280/116147732-12829480-a6ae-11eb-80df-58a88cebdab2.png)
 
 The RLS problem is:
-
-// 
+![Screenshot 2021-04-26 at 16 30 13](https://user-images.githubusercontent.com/60196280/116147755-18787580-a6ae-11eb-8a63-c5480d1c3260.png)
 
 where λ is the <ins>regularization parameter</ins>. We still don’t know what a regularizer is and why we should use it. Yet, here we will try to gather some practical intuition on it. You can see that LS is nothing else than RLS with λ = 0. Hence, we can just implement RLS.
 
@@ -20,8 +18,7 @@ where λ is the <ins>regularization parameter</ins>. We still don’t know what 
         [XtrainNormalized, XtestNormalized] = normalize_data(Xtrain, Xtest)
 
 2.  
-
-//
+![Screenshot 2021-04-26 at 16 32 37](https://user-images.githubusercontent.com/60196280/116147773-1dd5c000-a6ae-11eb-92c3-acb27d1b578b.png)
 
 3. From the above, implement RLS with prototype:
 
@@ -36,8 +33,7 @@ where λ is the <ins>regularization parameter</ins>. We still don’t know what 
 # <ins>Problem : Perceptron</ins>
 
 Here, we will implement and test the Perceptron algorithm on a real-world binary classification dataset.
-
-//
+![Screenshot 2021-04-26 at 16 35 55](https://user-images.githubusercontent.com/60196280/116147810-27f7be80-a6ae-11eb-80d0-59db6c87b211.png)
 
 1. Consider the alternative Perceptron updates w ̃ ← w ̃ + ηyi x ̃ i with learning rate η > 0. The Perceptron algorithm is the special case η = 1. Consider this alternative Perceptron and the standard Perceptron on the same sequence of training samples. Prove that these two algorithm with make exactly the same mistakes regardless of the value of η > 0.
 
