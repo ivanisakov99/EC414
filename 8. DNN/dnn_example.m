@@ -10,7 +10,7 @@ imds = imageDatastore('cats_vs_dogs', ...
 numClasses = 2;
 
 inputSize = [64 64 1];
-%% 
+%% Train the CNN
 
 layers = [
     imageInputLayer([64 64 1])
